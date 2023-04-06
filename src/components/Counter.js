@@ -5,7 +5,7 @@ const Counter = function () {
   return (
     <div>
       <p>Number of meals today: {meals.length}</p>
-      {data ? <p>{data.capital}</p> : <p>not available</p>}
+      {/* {data ? <p>{data.capital}</p> : <p>not available</p>} */}
     </div>
   );
 };

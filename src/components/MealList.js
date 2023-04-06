@@ -1,7 +1,7 @@
 import { useMealsListContext } from "../provider/MealsProvider";
 
 const MealsList = function () {
-  const { meals, data } = useMealsListContext();
+  const { meals } = useMealsListContext();
   return (
     <div>
       <h1>Meals List Using Context API</h1>
@@ -9,7 +9,7 @@ const MealsList = function () {
         <h2 key={index}>{meal}</h2>
       ))}
 
-      {data ? <p>{data.capital} </p> : <p>No data yet</p>}
+      {/* {data ? <p>{data.capital} </p> : <p>No data yet</p>} */}
     </div>
   );
 };
